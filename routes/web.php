@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+use App\Http\Controllers\Admin\IndexController as AdminIndexController;
+
+use App\Http\Controllers\IndexController;
+
+Route::prefix("admin")-> group(function() {
+
+    Route::get('/',[AdminIndexController::class,'index']);
 });
+
+
+Route::get('/',[IndexController::class,'index']);
