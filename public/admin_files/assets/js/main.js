@@ -27,44 +27,10 @@
 
     /* Light & Dark Mode */
 
-    $("#DarkMode").on("click", function () {
-      $("html").attr("data-bs-theme") == "dark" ? $("html").attr("data-bs-theme", "light") : $("html").attr("data-bs-theme", "dark")
+    $("[theme-change]").on("click", function () {
+      var theme = $(this).attr('theme-change');
+      $("html").attr("data-bs-theme", theme);
     }),
-
-
-      $(".dark-mode i").click(function () {
-        $(this).text(function (i, v) {
-          return v === 'dark_mode' ? 'light_mode' : 'dark_mode'
-        })
-      });
-
-
-    $(".dark-mode").click(function () {
-      $("html").attr("data-bs-theme", function (i, v) {
-        return v === 'dark' ? 'light' : 'dark';
-      })
-    })
-
-
-    // switcher 
-
-  $("#LightTheme").on("click", function() {
-    $("html").attr("data-bs-theme", "light")
-  }),
-
-  $("#DarkTheme").on("click", function() {
-    $("html").attr("data-bs-theme", "dark")
-  }),
-
-  $("#SemiDarkTheme").on("click", function() {
-    $("html").attr("data-bs-theme", "semi-dark")
-  }),
-
-  $("#BoderedTheme").on("click", function() {
-    $("html").attr("data-bs-theme", "bodered-theme")
-  })
-
-
 
     /* search control */
 

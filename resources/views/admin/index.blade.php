@@ -703,3 +703,8 @@
 </div><!--end row-->
 
 @endsection
+
+@section('js')
+<script src="/admin_files/assets/plugins/apexchart/apexcharts.min.js"></script>
+<script src="/admin_files/assets/js/index.js"></script>
+@endsection

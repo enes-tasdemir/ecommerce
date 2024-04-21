@@ -30,6 +30,13 @@
   .mini-sidebar {
     left: -260px;
   }
+  .toggled .main-wrapper {
+    margin-left: 0px;
+  }
+  .toggled .top-header .navbar {
+    left: 0px;
+  }
+  
 }
 @media only screen and (max-width: 992px) {
   .search-popup {
@@ -53,11 +60,24 @@
   body.toggled:not(.sidebar-hovered) .mini-sidebar .metismenu li.menu-label {
     display: none;
   }
+  body.toggled:not(.sidebar-hovered) .mini-footer.dark-mode .footer-icon:not(:first-child) {
+    display: none;
+  }
+  body.toggled:not(.sidebar-hovered) .mini-sidebar .sidebar-header .logo-name {
+    display: none;
+  }
+  .toggled .main-wrapper {
+    margin-left: 70px;
+  }
+  .toggled .top-header .navbar {
+    left: 70px;
+  }
+  .sidebar-close {
+    display: none;
+  }
 }
 
-.toggled .main-wrapper {
-  margin-left: 70px;
-}
-.toggled .top-header .navbar {
-  left: 70px;
+
+.toggled .mini-sidebar {
+  left: 0;
 }

@@ -395,11 +395,11 @@ $(function () {
       categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
     }
   };
-
+/*
   var chart = new ApexCharts(document.querySelector("#chart5"), options);
   chart.render();
 
-
+*/
 
 
 
